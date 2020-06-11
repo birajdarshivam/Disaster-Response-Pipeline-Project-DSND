@@ -6,31 +6,7 @@
     pandas 
     scikit-learn
     sqlalchemy 
-
-
-## Files:
-.
-├── app
-│   ├── run.py------------------------# FLASK FILE THAT RUNS APP
-│   │ 
-│   └── templates
-│       ├── go.html-------------------# CLASSIFICATION RESULT PAGE OF WEB APP
-│       └── master.html---------------# MAIN PAGE OF WEB APP
-├── data
-│   ├── DisasterResponse.db-----------# DATABASE TO SAVE CLEANED DATA TO
-|   ├── ETL_Preparation.db-----------# DATABASE TO SAVE CLEANED DATA TO
-│   ├── disaster_categories.csv-------# DATA TO PROCESS
-│   ├── disaster_messages.csv---------# DATA TO PROCESS
-│   └── process_data.py---------------# PERFORMS ETL PROCESS
-├── models
-│   └── train_classifier.py-----------# PERFORMS CLASSIFICATION TASK
-|   |
-|   └──── classifier.pkl
-├──────── ETL Pipeline Preparation.ipynb
-|       └── ML Pipeline Preparation.ipynb
-## Motivation:
-This project will include a web app where an emergency worker can input a new message and get classification results in several categories. The web app will also display visualizations of the data.
-
+    
 ## Project Components:
 There are three components of this project:
 
@@ -54,7 +30,19 @@ Outputs result on the test set
 Exports the final model as a pickle file
 
 ### 3. Flask Web App:
+Flask Web App We will be taking the user message and classify them into 36 categories. There are some beautiful visualization of the data as well
 
+
+## Description:
+#### The Project is divided in the following Sections:
+
+1. Data Processing, ETL Pipeline to extract data from source, clean data and save them in a proper databse structure
+2. Machine Learning Pipeline to train a model able to classify text message in categories
+3. Web App to show model results in real time.
+
+
+## Motivation:
+This project will include a web app where an emergency worker can input a new message and get classification results in several categories. The web app will also display visualizations of the data.
 
 ## Important Files:
 data/process_data.py: The ETL pipeline used to process data in preparation for model building.
