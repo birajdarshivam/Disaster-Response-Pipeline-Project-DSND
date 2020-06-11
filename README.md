@@ -31,6 +31,7 @@ Exports the final model as a pickle file
 
 ### 3. Flask Web App:
 Flask Web App We will be taking the user message and classify them into 36 categories. There are some beautiful visualization of the data as well
+![](WebApp_PNG_1893×875_.png)
 
 
 ## Description:
